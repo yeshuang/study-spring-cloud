@@ -1,6 +1,8 @@
 server:
   port: 7900
-spring:
+spring: 
+  application:
+    name: provider-user
   jpa:
     generate-ddl: false
     show-sql: true
@@ -10,3 +12,9 @@ spring:
     platform: h2
     schema: classpath:schema.sql
     data: classpath:data.sql
+    
+eureka:
+  client:
+    service-url:
+      # defaultZone: http://localhost:8761/eureka
+      defaultZone: http://admin:12345678@localhost:8761/eureka

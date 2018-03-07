@@ -1,2 +1,11 @@
+spring:
+  application:
+    name: consumer-movie
 server:
   port: 7901
+  
+eureka:
+  client:
+    service-url:
+      # defaultZone: http://localhost:8761/eureka
+      defaultZone: http://admin:12345678@localhost:8761/eureka

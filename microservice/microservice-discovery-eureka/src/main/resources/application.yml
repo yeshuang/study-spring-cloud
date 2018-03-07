@@ -1,3 +1,10 @@
+security:
+  basic:
+    enabled: true
+  user:
+    name: admin
+    password: 12345678
+        
 server:
   port: 8761
 eureka:
@@ -5,4 +12,5 @@ eureka:
     register-with-eureka: false #不将自己注册的Eureka服务器
     fetch-registry: false #如果是单点就设置为false
     service-url:
-      defaultZone: http://localhost:8761/eureka #把Eureka注册到那个URL地址
+      # defaultZone: http://localhost:8761/eureka #把Eureka注册到那个URL地址
+      defaultZone: http://admin:12345678@localhost:8761/eureka
