@@ -9,7 +9,7 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @EnableEurekaClient
-public class Application {
+public class ConsumerRibbonApplication {
 
 	@Bean
 	@LoadBalanced
@@ -18,6 +18,6 @@ public class Application {
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
+		SpringApplication.run(ConsumerRibbonApplication.class, args);
 	}
 }
