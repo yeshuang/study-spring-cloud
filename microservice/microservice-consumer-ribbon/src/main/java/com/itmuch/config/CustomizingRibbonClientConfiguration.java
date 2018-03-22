@@ -19,8 +19,7 @@ import com.netflix.loadbalancer.RandomRule;
 public class CustomizingRibbonClientConfiguration {
 
 	@Bean
-	// 测试将自定义Ribbon客户端实现类放到与SpringBoot启动类同级目录需要将 IClientConfig config 注释
-	public IRule ribbonRule(/* IClientConfig config */) {
+	public IRule ribbonRule(IClientConfig config) {
 		System.out.println("------自定义Ribbon客户端RandomRule()-----");
 		return new RandomRule();
 	}
