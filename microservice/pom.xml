@@ -54,5 +54,6 @@
 		<module>microservice-consumer-movie</module>
 		<module>microservice-discovery-eureka</module>
     <module>microservice-consumer-ribbon</module>
+    <module>microservice-consumer-ribbon-annotation</module>
   </modules>
 </project>
