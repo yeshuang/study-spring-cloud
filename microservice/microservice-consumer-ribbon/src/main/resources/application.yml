@@ -1,8 +1,8 @@
 spring:
   application:
-    name: consumer-movie
+    name: consumer-ribbon
 server:
-  port: 7902
+  port: 8901
   
 eureka:
   client:

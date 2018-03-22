@@ -16,6 +16,13 @@ public class MovieController {
 
 	@GetMapping("/movie/{id}")
 	public User findById(@PathVariable Long id) {
+		/**
+		 * 未集成Ribbon的时候这里使用IP+端口的试试请求URL地址，集成Ribbon使用服务提供者的服务名，即是application.myl文件中配置的
+		 * spring: 
+  		 *		application:
+    		 *			name: provider-user
+		 */
+		//return restTemplate.getForObject("http://localhost:7900/simple/" + id, User.class);
 		return restTemplate.getForObject("http://provider-user/simple/" + id, User.class);
 	}
 }
