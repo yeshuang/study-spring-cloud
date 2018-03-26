@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.4.1.RELEASE</version>
+		<version>1.5.10.RELEASE</version>
 	</parent>
 
 	<groupId>com.summer</groupId>
@@ -24,7 +24,7 @@
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
-				<version>Camden.SR1</version>
+				<version>Edgware.SR2</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
@@ -53,7 +53,8 @@
 		<module>microservice-provider-user</module>
 		<module>microservice-consumer-movie</module>
 		<module>microservice-discovery-eureka</module>
-    <module>microservice-consumer-ribbon</module>
-    <module>microservice-consumer-ribbon-annotation</module>
-  </modules>
+		<module>microservice-consumer-ribbon</module>
+		<module>microservice-consumer-ribbon-annotation</module>
+		<module>microservice-consumer-ribbon-properties</module>
+	</modules>
 </project>

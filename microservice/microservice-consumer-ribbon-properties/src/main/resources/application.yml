@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: consumer-ribbon-properties
+server:
+  port: 8903
+  
+eureka:
+  client:
+    service-url:
+      # defaultZone: http://localhost:8761/eureka
+      defaultZone: http://admin:12345678@localhost:8761/eureka
+      
+#使用属性自定义Ribbon客户端
+provider-user:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
